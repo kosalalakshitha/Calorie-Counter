@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -13,7 +12,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Xaml.Shapes;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -22,9 +20,9 @@ namespace Calorie_Counter
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class ViewDailyCalorie : Page
+    public sealed partial class DailyDetails : Page
     {
-        public ViewDailyCalorie()
+        public DailyDetails()
         {
             this.InitializeComponent();
         }
@@ -36,26 +34,20 @@ namespace Calorie_Counter
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            double cal, amount, protien, carbohydrate, fat;
-            foreach (DayData dayData in GlobalData.dayData)
+            DayData data = e.Parameter as DayData;
+            tbHeader.Text = "Day Detail - " + data.date.ToString().Split(' ')[0];
+            foreach (DailyCalorie calories in data.dailyData)
             {
                 TextBlock item = new TextBlock();
-                item.Text = dayData.ToString();
+                item.Text = calories.ToString();
                 item.TextWrapping = TextWrapping.WrapWholeWords;
-                item.Tapped += Item_Tapped;
                 lvCalorieList.Items.Add(item);
             }
         }
 
-        private void Item_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            DayData data = GlobalData.dayData[lvCalorieList.SelectedIndex];
-            Frame.Navigate(typeof(DailyDetails), data);
-        }
-
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MainPage));
+            Frame.Navigate(typeof(ViewDailyCalorie));
         }
     }
 }

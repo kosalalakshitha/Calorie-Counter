@@ -124,17 +124,19 @@ namespace Calorie_Counter.Calorie_Counter_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "Calorie_Counter.MainPage";
+            _typeNameTable = new string[5];
+            _typeNameTable[0] = "Calorie_Counter.DailyDetails";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Calorie_Counter.ViewDailyCalorie";
+            _typeNameTable[3] = "Calorie_Counter.MainPage";
+            _typeNameTable[4] = "Calorie_Counter.ViewDailyCalorie";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::Calorie_Counter.MainPage);
+            _typeTable = new global::System.Type[5];
+            _typeTable[0] = typeof(global::Calorie_Counter.DailyDetails);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Calorie_Counter.ViewDailyCalorie);
+            _typeTable[3] = typeof(global::Calorie_Counter.MainPage);
+            _typeTable[4] = typeof(global::Calorie_Counter.ViewDailyCalorie);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -169,8 +171,9 @@ namespace Calorie_Counter.Calorie_Counter_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Calorie_Counter.MainPage(); }
-        private object Activate_3_ViewDailyCalorie() { return new global::Calorie_Counter.ViewDailyCalorie(); }
+        private object Activate_0_DailyDetails() { return new global::Calorie_Counter.DailyDetails(); }
+        private object Activate_3_MainPage() { return new global::Calorie_Counter.MainPage(); }
+        private object Activate_4_ViewDailyCalorie() { return new global::Calorie_Counter.ViewDailyCalorie(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -182,9 +185,9 @@ namespace Calorie_Counter.Calorie_Counter_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Calorie_Counter.MainPage
+            case 0:   //  Calorie_Counter.DailyDetails
                 userType = new global::Calorie_Counter.Calorie_Counter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_DailyDetails;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -197,9 +200,16 @@ namespace Calorie_Counter.Calorie_Counter_XamlTypeInfo
                 xamlType = new global::Calorie_Counter.Calorie_Counter_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Calorie_Counter.ViewDailyCalorie
+            case 3:   //  Calorie_Counter.MainPage
                 userType = new global::Calorie_Counter.Calorie_Counter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_ViewDailyCalorie;
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Calorie_Counter.ViewDailyCalorie
+                userType = new global::Calorie_Counter.Calorie_Counter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_ViewDailyCalorie;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

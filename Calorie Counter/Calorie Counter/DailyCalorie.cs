@@ -37,7 +37,7 @@ namespace Calorie_Counter
 
         public override string ToString()
         {
-            return foodDescription + " - " + amount;
+            return foodDescription + " contained " + amount + " in amount, " + calories + " in calorie, " + protein + " in protein, " + fat + " in fat and " + carbohydrates + " in carbohydrates.  ______________________________________________________________________________________________________________________________________________";
         }
     }
 }

@@ -83,6 +83,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DailyCalorie.cs" />
+    <Compile Include="DailyDetails.xaml.cs">
+      <DependentUpon>DailyDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DayData.cs" />
     <Compile Include="FileManager.cs" />
     <Compile Include="GlobalData.cs" />
@@ -112,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DailyDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -11,9 +11,8 @@
     <Grid>
         <TextBlock Text="Calorie Counter" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,19,604"/>
         <TextBlock Text="Daily Calories" Margin="0,29.333,19,537.666" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-        <ListView x:Name="lvCalorieList" HorizontalAlignment="Left" Height="523" Margin="10,107,0,0" VerticalAlignment="Top" Width="371" FontSize="18">
-            <Line Height="1" RequestedTheme="Dark" Stroke="White" StrokeThickness="2" X2="200"/>
-        </ListView>
+        <ListView x:Name="lvCalorieList" HorizontalAlignment="Left" Height="480" Margin="10,107,0,0" VerticalAlignment="Top" Width="371" FontSize="18"/>
+        <Button x:ConnectionId='1' x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="281,582,0,0" VerticalAlignment="Top"                      />
 
     </Grid>
 </Page>

@@ -67,3 +67,8 @@ C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Co
 C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\ViewDailyCalorie.g.cs
 C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\ViewDailyCalorie.xaml
 C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\ViewDailyCalorie.xbf
+C:\Users\Kosala\Documents\Visual Studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\DailyDetails.xbf
+C:\Users\Kosala\Documents\Visual Studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\DailyDetails.g.i.cs
+C:\Users\Kosala\Documents\Visual Studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\DailyDetails.g.cs
+C:\Users\Kosala\Documents\Visual Studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\DailyDetails.xaml
+C:\Users\Kosala\Documents\Visual Studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\DailyDetails.xbf
