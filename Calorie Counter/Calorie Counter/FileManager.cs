@@ -6,6 +6,7 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using Windows.UI.Popups;
 
 namespace Calorie_Counter
 {
@@ -16,18 +17,26 @@ namespace Calorie_Counter
 
         public static async Task writeXMLAsync()
         {
-            var seriealizer = new DataContractJsonSerializer(typeof(List<DailyCalorie>));
+            var seriealizer = new DataContractJsonSerializer(typeof(List<DayData>));
             using (var stream = await ApplicationData.Current.LocalFolder.OpenStreamForWriteAsync(JSONFILENAME, CreationCollisionOption.ReplaceExisting))
             {
-                seriealizer.WriteObject(stream, GlobalData.dailyCalories);
+                seriealizer.WriteObject(stream, GlobalData.dayData);
+                MessageDialog success = new MessageDialog("Data saved!");
+                await success.ShowAsync();
             }
         }
 
-        public static async Task readXMLAsync()
+        public static async Task readJsonAsync()
         {
-            var jasonSerializer = new DataContractJsonSerializer(typeof(List<DailyCalorie>));
-            var stream = await ApplicationData.Current.LocalFolder.OpenStreamForReadAsync(JSONFILENAME);
-            GlobalData.dailyCalories = (List<DailyCalorie>)jasonSerializer.ReadObject(stream);
+            try
+            {
+                var jasonSerializer = new DataContractJsonSerializer(typeof(List<DayData>));
+                var stream = await ApplicationData.Current.LocalFolder.OpenStreamForReadAsync(JSONFILENAME);
+                GlobalData.dayData = (List<DayData>)jasonSerializer.ReadObject(stream);
+            }
+            catch (Exception)
+            {
+            }
 
             //string content = string.Empty;
 

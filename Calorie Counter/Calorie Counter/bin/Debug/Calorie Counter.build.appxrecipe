@@ -54,6 +54,9 @@
     <AppxPackagedFile Include="C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\ViewDailyCalorie.xbf">
+      <PackagePath>ViewDailyCalorie.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>

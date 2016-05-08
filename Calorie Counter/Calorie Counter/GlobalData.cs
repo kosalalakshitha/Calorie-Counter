@@ -8,6 +8,6 @@ namespace Calorie_Counter
 {
     public static class GlobalData
     {
-        public static List<DailyCalorie> dailyCalories = new List<DailyCalorie>();
+        public static List<DayData> dayData = new List<DayData>();
     }
 }

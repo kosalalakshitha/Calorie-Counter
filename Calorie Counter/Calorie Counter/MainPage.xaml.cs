@@ -39,10 +39,17 @@ namespace Calorie_Counter
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             // TODO: Prepare page for display here.
-            ClearAll();
+            DailyCalorie data = e.Parameter as DailyCalorie;
+            if (data != null)
+                setFeilds(data);
+            else
+                ClearAll();
+
+            if (GlobalData.dayData.Count == 0)
+                await FileManager.readJsonAsync();
 
             // TODO: If your application contains multiple pages, ensure that you are
             // handling the hardware Back button by registering for the
@@ -56,6 +63,17 @@ namespace Calorie_Counter
             ClearAll();
         }
 
+        private void setFeilds(DailyCalorie data)
+        {
+            tbFoodDesc.Text = data.foodDescription;
+            tbAmount.Text = data.amount.ToString();
+            tbCalories.Text = data.calories.ToString();
+            tbCarbohydrates.Text = data.carbohydrates.ToString();
+            tbFat.Text = data.fat.ToString();
+            tbProtein.Text = data.protein.ToString();
+            btnSave.IsEnabled = false;
+        }
+
         private void ClearAll()
         {
             tbFoodDesc.Text = "";
@@ -64,6 +82,7 @@ namespace Calorie_Counter
             tbCarbohydrates.Text = "0";
             tbFat.Text = "0";
             tbProtein.Text = "0";
+            btnSave.IsEnabled = true;
         }
 
         private void tbAmount_GotFocus(object sender, RoutedEventArgs e)
@@ -96,6 +115,7 @@ namespace Calorie_Counter
             DailyCalorie data = new DailyCalorie();
             double result;
             bool invalidInputs = false;
+            bool found = false;
 
             if (tbFoodDesc.Text == "")
             {
@@ -114,6 +134,7 @@ namespace Calorie_Counter
             data.protein = result;
             invalidInputs = invalidInputs || !double.TryParse(tbCarbohydrates.Text, out result);
             data.carbohydrates = result;
+            data.dateTime = DateTime.Now;
 
             if (invalidInputs)
             {
@@ -121,10 +142,32 @@ namespace Calorie_Counter
                 await errorMessage.ShowAsync();
                 return;
             }
-            GlobalData.dailyCalories.Add(data);
+            DateTime now = DateTime.Now;
+            if (GlobalData.dayData == null)
+                GlobalData.dayData = new List<DayData>();
+
+            foreach (DayData dayData in GlobalData.dayData)
+            {
+                if (dayData.date.Date == now.Date)
+                {
+                    dayData.dailyData.Add(data);
+                    found = true;
+                }
+            }
+            if (!found)
+            {
+                DayData newDay = new DayData();
+                newDay.date = DateTime.Now;
+                newDay.dailyData.Add(data);
+                GlobalData.dayData.Add(newDay);
+            }
             await FileManager.writeXMLAsync();
-            MessageDialog success = new MessageDialog("Data saved!");
             ClearAll();
+        }
+
+        private void btnDaily_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ViewDailyCalorie));
         }
     }
 }

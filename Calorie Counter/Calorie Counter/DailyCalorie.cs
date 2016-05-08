@@ -17,6 +17,15 @@ namespace Calorie_Counter
             protein = 0;
             carbohydrates = 0;
         }
+        public DailyCalorie(string foodDesc, double amount, double calories, double fat, double protein, double carbohydrates)
+        {
+            foodDescription = foodDesc;
+            this.amount = amount;
+            this.calories = calories;
+            this.fat = fat;
+            this.protein = protein;
+            this.carbohydrates = carbohydrates;
+        }
 
         public string foodDescription { get; set; }
         public double amount { get; set; }
@@ -24,6 +33,11 @@ namespace Calorie_Counter
         public double fat { get; set; }
         public double protein { get; set; }
         public double carbohydrates { get; set; }
-        
+        public DateTime dateTime { get; set; }
+
+        public override string ToString()
+        {
+            return foodDescription + " - " + amount;
+        }
     }
 }

@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Calorie_Counter.ViewDailyCalorie"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calorie_Counter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock Text="Calorie Counter" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,19,604"/>
+        <TextBlock Text="Daily Calories" Margin="0,29.333,19,537.666" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        <ListView x:Name="lvCalorieList" HorizontalAlignment="Left" Height="523" Margin="10,107,0,0" VerticalAlignment="Top" Width="371" FontSize="18">
+            <Line Height="1" RequestedTheme="Dark" Stroke="White" StrokeThickness="2" X2="200"/>
+        </ListView>
+
+    </Grid>
+</Page>
