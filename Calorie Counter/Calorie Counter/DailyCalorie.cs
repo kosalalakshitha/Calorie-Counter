@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calorie_Counter
 {
-    class DailyCalorie
+    public class DailyCalorie
     {
         public DailyCalorie()
         {

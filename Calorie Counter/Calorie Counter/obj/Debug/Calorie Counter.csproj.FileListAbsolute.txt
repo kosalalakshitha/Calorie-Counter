@@ -30,3 +30,35 @@ c:\users\kosala\documents\visual studio 2015\Projects\Calorie Counter\Calorie Co
 c:\users\kosala\documents\visual studio 2015\Projects\Calorie Counter\Calorie Counter\obj\Debug\qualifiers.txt.intermediate
 c:\users\kosala\documents\visual studio 2015\Projects\Calorie Counter\Calorie Counter\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\kosala\documents\visual studio 2015\Projects\Calorie Counter\Calorie Counter\obj\Debug\ProjectArchitectures.txt
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\App.xbf
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\MainPage.xbf
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\Calorie Counter.xr.xml
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\Calorie Counter.exe
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\Calorie Counter.pdb
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\resources.pri
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\AppxManifest.xml
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\bin\Debug\Calorie Counter.build.appxrecipe
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\App.g.i.cs
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\App.g.cs
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\MainPage.g.i.cs
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\MainPage.g.cs
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\App.xaml
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\MainPage.xaml
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\App.xbf
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\MainPage.xbf
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\Calorie Counter.exe
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\Calorie Counter.pdb
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\priconfig.xml
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\priconfig.xml.intermediate
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\layout.resfiles
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\layout.resfiles.intermediate
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\resources.resfiles
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\resources.resfiles.intermediate
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\pri.resfiles
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\pri.resfiles.intermediate
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\qualifiers.txt
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\obj\Debug\ProjectArchitectures.txt

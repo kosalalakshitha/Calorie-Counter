@@ -1,1 +1,1 @@
-c:\users\kosala\documents\visual studio 2015\Projects\Calorie Counter\Calorie Counter\Calorie Counter.csproj;neutral
+C:\Users\Kosala\Documents\visual studio 2015\Projects\Calorie-Counter\Calorie Counter\Calorie Counter\Calorie Counter.csproj;neutral

@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -117,6 +121,10 @@ namespace Calorie_Counter
                 await errorMessage.ShowAsync();
                 return;
             }
+            GlobalData.dailyCalories.Add(data);
+            await FileManager.writeXMLAsync();
+            MessageDialog success = new MessageDialog("Data saved!");
+            ClearAll();
         }
     }
 }
