@@ -157,7 +157,7 @@ namespace Calorie_Counter
             if (!found)
             {
                 DayData newDay = new DayData();
-                newDay.date = DateTime.Now;
+                newDay.date = data.dateTime;
                 newDay.dailyData.Add(data);
                 GlobalData.dayData.Add(newDay);
             }
